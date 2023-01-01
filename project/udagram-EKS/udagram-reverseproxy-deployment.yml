@@ -16,7 +16,7 @@ spec:
         app: udagram-reverseproxy
     spec:
       containers:
-      - name: nginx
+      - name: udagram-reverseproxy
         image: hanatareka/udagram-reverseproxy:latest
         imagePullPolicy: Always          
         resources:

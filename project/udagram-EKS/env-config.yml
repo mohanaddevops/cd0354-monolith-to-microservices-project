@@ -10,8 +10,12 @@ metadata:
 
 data:
 
-   HTTP_PROXY: http://customer.proxy.host:proxy_port
-
-   HTTPS_PROXY: http://customer.proxy.host:proxy_port
-
-   NO_PROXY: 10.100.0.0/16,localhost,127.0.0.1,192.168.0.0/16,169.254.169.254,.internal,s3.amazonaws.com,.s3.us-east-1.amazonaws.com,api.ecr.us-east-1.amazonaws.com,dkr.ecr.us-east-1.amazonaws.com,ec2.us-east-1.amazonaws.com
+   POSTGRES_USERNAME: bW9oYW5hZAo=
+   POSTGRES_PASSWORD: MTIzNDU2Nzg5Cg==
+   POSTGRES_HOST: Y2RyLmNzdWd3M3NtbTlkbC51cy1lYXN0LTEucmRzLmFtYXpvbmF3cy5jb20K
+   POSTGRES_DB: cG9zdGdyZXMK
+   AWS_BUCKET: YXJuOmF3czpzMzo6OnVkYWdyYW0tcHJvamVjdC11ZGFjaXR5Cg==
+   AWS_REGION: dXMtZWFzdC0xCg==
+   AWS_PROFILE: ZGVmYXVsdAo=
+   JWT_SECRET: aGVsbG8K
+   URL: aHR0cDovL2xvY2FsaG9zdDo4MTAwCg==
