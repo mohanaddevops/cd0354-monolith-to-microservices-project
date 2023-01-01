@@ -19,13 +19,6 @@ spec:
       - name: udagram-api-user
         image: hanatareka/udagram-api-user:latest
         imagePullPolicy: Always  
-        resources:
-          requests:
-            memory: "512Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"
         envFrom:
         - configMapRef:
             name: env-config
