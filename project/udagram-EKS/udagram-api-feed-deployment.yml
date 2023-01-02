@@ -3,13 +3,17 @@ kind: Deployment
 metadata:
   labels:
     service: udagram-api-feed
-  name: default
+  name: udagram-api-feed
 spec:
   replicas: 1
+  selector:
+      matchLabels:
+        app.kubernetes.io/name: udagram-api-feed
   template:
     metadata:
-      labels:
-        service: udagram-api-feed
+        labels:
+          app.kubernetes.io/name: udagram-api-feed
+          service: udagram-api-feed
     spec:
       containers:
       - image: hanatareka/udagram-api-feed
