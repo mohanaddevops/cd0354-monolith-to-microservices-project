@@ -14,10 +14,6 @@ spec:
         labels:
           app.kubernetes.io/name: udagram-api-user
           service: udagram-api-user
-  template:
-    metadata:
-      labels:
-        service: udagram-api-user
     spec:
       containers:
       - image: hanatareka/udagram-api-user

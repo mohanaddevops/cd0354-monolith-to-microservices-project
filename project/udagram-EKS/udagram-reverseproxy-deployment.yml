@@ -14,10 +14,6 @@ spec:
         labels:
           app.kubernetes.io/name: udagram-reverseproxy
           service: udagram-reverseproxy
-  template:
-    metadata:
-      labels:
-        service: udagram-reverseproxy
     spec:
       containers:
       - image: hanatareka/udagram-reverseproxy

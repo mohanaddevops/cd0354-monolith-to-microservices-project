@@ -13,12 +13,7 @@ spec:
     metadata:
         labels:
           app.kubernetes.io/name: udagram-frontend
-          service: udagram-frontend
-  template:
-    metadata:
-      labels:
-        service: udagram-frontend
-        api: external        
+          service: udagram-frontend      
     spec:
       containers:
       - image: hanatareka/udagram-frontend
