@@ -6,6 +6,14 @@ metadata:
   name: udagram-reverseproxy
 spec:
   replicas: 1
+  selector:
+      matchLabels:
+        app.kubernetes.io/name: udagram-reverseproxy
+  template:
+    metadata:
+        labels:
+          app.kubernetes.io/name: udagram-reverseproxy
+          service: udagram-reverseproxy
   template:
     metadata:
       labels:

@@ -2,15 +2,15 @@ kubectl apply -f aws-secret.yml
 kubectl apply -f env-secret.yml
 kubectl apply -f env-configmap.yml
 # Deployments - Double check the Dockerhub image name and version in the deployment files
-kubectl apply -f api-feed-deployment.yml
-kubectl apply -f api-user-deployment.yml
-kubectl apply -f frontend-deployment.yml
-kubectl apply -f reverseproxy-deployment.yml
+kubectl apply -f udagram-api-feed-deployment.yml
+kubectl apply -f udagram-api-user-deployment.yml
+kubectl apply -f udagram-frontend-deployment.yml
+kubectl apply -f udagram-reverseproxy-deployment.yml
 # Service
-kubectl apply -f api-feed-service.yml
-kubectl apply -f api-user-service.yml
-kubectl apply -f frontend-service.yml
-kubectl apply -f reverseproxy-service.yml
+kubectl apply -f udagram-api-feed-service.yml
+kubectl apply -f udagram-api-user-service.yml
+kubectl apply -f udagram-frontend-service.yml
+kubectl apply -f udagram-reverseproxy-service.yml
 # Check the deployment names and their pod status
 kubectl get deployments
 # Create a Service object that exposes the frontend deployment

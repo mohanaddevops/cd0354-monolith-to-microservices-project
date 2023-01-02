@@ -6,6 +6,14 @@ metadata:
   name: udagram-frontend
 spec:
   replicas: 1
+  selector:
+      matchLabels:
+        app.kubernetes.io/name: udagram-frontend
+  template:
+    metadata:
+        labels:
+          app.kubernetes.io/name: udagram-frontend
+          service: udagram-frontend
   template:
     metadata:
       labels:

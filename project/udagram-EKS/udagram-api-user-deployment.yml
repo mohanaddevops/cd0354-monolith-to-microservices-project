@@ -6,6 +6,14 @@ metadata:
   name: udagram-api-user
 spec:
   replicas: 1
+  selector:
+      matchLabels:
+        app.kubernetes.io/name: udagram-api-user
+  template:
+    metadata:
+        labels:
+          app.kubernetes.io/name: udagram-api-user
+          service: udagram-api-user
   template:
     metadata:
       labels:
